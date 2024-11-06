@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(68, 68, 255);
+            color: white;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos de DOM</h1>
+    <div id="new"></div>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar DOM em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('O parágrafo está escrito assim : ' + p1.innerText)
+        p1.style.color  = 'red'
+
+        /*var d =  window.document.getElementById('msg')
+        d.innerText = 'Usando o id  para selecionar o elemento' */
+
+
+        /* var d = window.document.getElementsByName('msg')[0]
+        d.style.background = 'red'
+        usando name para  selecionar o elemento */
+
+        /* var d =  window.document.getElementsByClassName('msg')[0]
+        d.innerHTML = 'agora usando class'  */
+
+        var d = window.document.querySelector('div#msg')
+
+        d.style.color = 'yellow'
+        d.style.background = 'red'
+        d.innerHTML =  'agora usando querySelector'
+
+        var n =  window.document.querySelector('div#new')
+
+        n.style.background = 'gray'
+
+    n.innerHTML = 'olá tudo <strong>bem?</strong>'
+    n.style.width =  '130px'
+    n.style.margin = 'auto'
+    
+    </script>
+</body>
+</html>
