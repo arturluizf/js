@@ -7,23 +7,33 @@
 </head>
 <body>
     <h1>Você é Brasileiro ou não?</h1>
-    <label for="">País Nascido</label>
-    <input type="text" name="pais" id="pais">
-    <input type="button" value="Enviar" onclick="verificarPais()">
+    <form action="">
+        <label for="">País Nascido</label>
+        <input type="text" name="pais" id="pais" list="lstpais" required>
+        <datalist id="lstpais">
+            <option>Brasil</option>
+        </datalist>
+        
+        
+        <input type="button" value="Enviar" onclick="verificarPais()">
+        
+    </form>
     <div id="res">
-
     </div>
+    
 
     <script>
         function verificarPais(){
             let paisNascido = document.getElementById("pais").value;
-            let paisOrigem =String(value.paisNacido)
+
+            paisNascido = paisNascido = paisNascido.charAt(0).toUpperCase() + paisNascido.slice(1).toLowerCase();
+
             let res = document.getElementById("res");
-            res.innerHTML = `<p>Você nasceu em ${paisOrigem}.</p>`
-            if(paisNascido == "Brasil"){
-                res.innerHTML = `<p>Você é Brasileiro!</p>`
+            res.innerHTML = `<p>Você nasceu no ${paisNascido}.</p>`
+            if(paisNascido == 'Brasil'){
+                res.innerHTML += `<p>Você é Brasileiro!</p>`
             }else {
-                res.innerHTML = `<p>Você é Estrangeiro!</p>`
+                res.innerHTML += `<p>Você é Estrangeiro!</p>`
             }
         }
     </script>
