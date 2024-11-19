@@ -6,3 +6,5 @@ let sobrenome = null ; // null -> não foi apontado para nenhum local da memóri
 const aprovado = true; // booleano = true ou false
 
 // string, number, boolean, null, undefined
+
+// parseInt (Números inteiros), parseFloat (Números decimais), Number (Números decimais ou inteiros),
