@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        div {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get" id="form">
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+        </div>
+        <div>
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required>
+        </div>
+        <div>
+            <label for="idade">Idade</label>
+            <input type="number" name="idade" id="idade" placeholder="Digite sua idade" required>
+        </div>
+        <div>
+            <label for="peso">Peso</label>
+            <input type="number" name="peso" id="peso" placeholder="Digite seu peso" required>
+        </div>
+        <div>
+            <label for="altura">Altura</label>
+            <input type="number" name="altura" id="altura" placeholder="Digite sua altura" required>
+        </div>
+        <input type="submit" value="Enviar" onclick="validarFormulario()">
+    </form>
+
+    <div class="resultado"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
