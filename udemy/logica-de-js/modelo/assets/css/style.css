@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sriracha&display=swap');
+
+:root {
+    --first-color: rgb(49, 49, 242);
+}
+
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--first-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 1em;
+    height: 30px;
+    padding: 20px 0px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+form input:focus {
+    outline:1px solid rgb(4, 132, 230);
+}
+
+#enviar {
+    height: 50px;
+    margin: auto;
+    font-weight: bolder;
+    background: var(--first-color);
+    color : white;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+#enviar:hover {
+    background-color: blue;
+}
+
